@@ -3,7 +3,7 @@
     Layout = null;
 }
 
-
+<!--control shift w ile çalıştır -->
 <!DOCTYPE html>
 <html>
 
@@ -36,14 +36,16 @@
 	<h1>Easy Cash Kayıt Formu</h1>
 
 	<div class="w3layoutscontaineragileits">
-		<h2>Yeni Mişteri</h2>
+		<h2>Yeni Müşteri</h2>
 		<form  method="post">
-			<input type="text" asp-for="Username" placeholder="Adınız" required="">
+			<input type="text" asp-for="Name" placeholder="Adınız" required="">
 			<input type="text" asp-for="Surname" placeholder="Soyadınız" required="">
-			<input type="text" asp-for="Username" placeholder="Kullanıcı Adı" required="">
+			<input type="text" asp-for="Username" placeholder="Kullanıcı Adınız" required="">
 			<input type="email" asp-for="Email" placeholder="Mail Adresiniz" required="">
 			<input type="password" asp-for="Password" placeholder="Şifreniz" required="">
-			<input type="password" asp-for="ConfirmPassword" placeholder="Şifrenizi Onaylayınız" required="">
+			<input type="password" asp-for="ConfirmPassword" placeholder="Şifrenizi Tekrar Giriniz" required="">
+			<div class="text-white" asp-validation-summary="ModelOnly"></div>
+			<br /><br />
 			<ul class="agileinfotickwthree">
 				<li>
 					<input type="checkbox" id="brand1" value="">
@@ -62,7 +64,7 @@
 
 
 	<div class="w3footeragile">
-		<p> &copy; @DateTime.Now.Year Easy Cash Giriş Paneli. Tüm HAkları Saklıdır. | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
+		<p> &copy; @DateTime.Now.Year Easy Cash Giriş Paneli. Tüm Hakları Saklıdır. | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
 	</div>
 
 
